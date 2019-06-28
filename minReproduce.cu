@@ -50,8 +50,9 @@ int main(int argc, char *argv[]){
 	sx = std::stoll (std::string(argv[1]));
 	sy = std::stoll (std::string(argv[2]));
 	sz = std::stoll (std::string(argv[3]));
-   
+  std::cout << "Initializing dataset..." << std::endl;
   initDataset(&pos, sx, sy, sz);
+  std::cout << "done!" << std::endl;
   d_pos = pos;
   float normal[3], d = 0.0f;
   normal[0] = 0.5f;
